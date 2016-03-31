@@ -1,30 +1,26 @@
 # Capistrano::Sweet
 
-TODO: Write a gem description
+Some useful capistrano recipes which used in boohee.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'capistrano-sweet'
+gem 'capistrano-sweet', group: 'development'
 ```
 
 And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install capistrano-sweet
-
 ## Usage
 
-TODO: Write usage instructions here
+Add `require 'capistrano/sweet'` to Capfile
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/capistrano-sweet/fork )
+1. Fork it ( https://github.com/xiewenwei/capistrano-sweet/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
