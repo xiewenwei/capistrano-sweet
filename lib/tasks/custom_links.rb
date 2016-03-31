@@ -3,7 +3,8 @@ namespace :sweet do
   desc 'custom_links'
   task :custom_links do
     on roles(:app) do
-      fetch(:custom_links).each do |link|
+      links = fetch(:custom_links) || []
+      links.each do |link|
         source = link[:source]
         target = link[:target]
         unless test "[ -L #{target} ]"
@@ -15,4 +16,4 @@ namespace :sweet do
   end
 end
 
-after 'deploy:symlink:shared', 'sweet:custom_links'
+#after 'deploy:symlink:shared', 'sweet:custom_links'
